@@ -1,0 +1,53 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:eslint-comments/recommended",
+    "react-app",
+    "eslint-config-prettier" 
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "react",
+    "react-hooks",
+    "lodash",
+    "mocha",
+    "prettier",
+    "jsx-a11y"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "rules": {
+    "@next/next/no-html-link-for-pages": "off",
+    "no-unused-vars": "error",
+    "@typescript-eslint/no-use-before-define": "error",
+    "jsx-a11y/no-distracting-elements": 0,
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "space-before-function-paren": "off",
+    "no-dupe-class-members": "off",
+    "no-useless-constructor": "off",
+    "@typescript-eslint/no-useless-constructor": "off",
+    "prettier/prettier": "error",
+    "lines-between-class-members": ["error", "always"],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return" }
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "off",
+      { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }
+    ]
+  }
+}

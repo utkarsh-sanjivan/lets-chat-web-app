@@ -1,20 +1,20 @@
 {
   "extends": [
+    "eslint-config-prettier", 
     "next/core-web-vitals",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:eslint-comments/recommended",
-    "react-app",
-    "eslint-config-prettier" 
+    "react-app"
   ],
   "plugins": [
     "@typescript-eslint",
     "import",
-    "react",
-    "react-hooks",
+    "jsx-a11y",
     "lodash",
     "mocha",
     "prettier",
-    "jsx-a11y"
+    "react",
+    "react-hooks"
   ],
   "env": {
     "browser": true,
@@ -26,28 +26,32 @@
     "ecmaVersion": 6
   },
   "rules": {
-    "@next/next/no-html-link-for-pages": "off",
-    "no-unused-vars": "error",
-    "@typescript-eslint/no-use-before-define": "error",
-    "jsx-a11y/no-distracting-elements": 0,
-    "react/prop-types": "off",
-    "react/react-in-jsx-scope": "off",
-    "space-before-function-paren": "off",
-    "no-dupe-class-members": "off",
-    "no-useless-constructor": "off",
-    "@typescript-eslint/no-useless-constructor": "off",
-    "prettier/prettier": "error",
+    "consistent-return": "off",
+    "func-names": "off",
     "lines-between-class-members": ["error", "always"],
+    "no-console": "error",
+    "no-dupe-class-members": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": "error",
+    "no-useless-constructor": "off",
     "padding-line-between-statements": [
       "error",
       { "blankLine": "always", "prev": "*", "next": "return" }
     ],
+    "space-before-function-paren": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-explicit-any": "off",
+    "@next/next/no-html-link-for-pages": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-unused-vars": [
       "off",
       { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }
-    ]
+    ],
+    "@typescript-eslint/no-useless-constructor": "off",
+    "@typescript-eslint/no-use-before-define": "error",
+    "jsx-a11y/no-distracting-elements": 0,
+    "prettier/prettier": "error",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off"
   }
 }

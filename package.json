@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "dev": "next dev",
     "lint": "eslint --max-warnings 0 .",
     "lint:fix": "eslint --fix",
     "prettier:check": "prettier --check **/*.ts",
     "prettier:fix": "prettier --write **/*.ts",
     "test-unit": "echo `Unit Test`",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "@types/node": "18.14.6",
